@@ -1,0 +1,84 @@
+@media (max-width: 1023px) {
+  .navbar-right .login-button,
+  .navbar-right .signup-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-right .login-button,
+  .navbar-right .signup-button {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.hamburger-menu .login-button,
+.hamburger-menu .signup-button {
+  display: inline-block;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-center,
+.navbar-right,
+.navbar-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-right button,
+.navbar-right input {
+  margin: 0.25rem 0;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+}
+
+.search-container {
+  display: flex;
+  width: 80%;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.search-button {
+  flex: 0 0 auto;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+.search-button .button-text {
+  display: none;
+}
+
+.logo-image {
+  height: 30px;
+  width: auto;
+}

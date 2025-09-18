@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.navbar-right .search-button,
+.navbar-right .login-button,
+.navbar-right .signup-button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar-right .search-button:hover,
+.navbar-right .login-button:hover,
+.navbar-right .signup-button:hover {
+  background-color: #696969;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+  .navbar-left, .navbar-center, .navbar-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-center .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-center .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .navbar-right {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navbar-right .search-input,
+  .navbar-right .search-button,
+  .navbar-right .login-button,
+  .navbar-right .signup-button {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+}
