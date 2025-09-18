@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { FaSearch, FaUser, FaSignInAlt } from "react-icons/fa";
 import "./navBar.css";
 import HamburgerMenu from "./hamburgerMenu";
