@@ -20,12 +20,12 @@ const NavBar = () => {
           </button>
         </div>
         <button className="login-button">
-          Login
+          <span className="login-text">Login</span>
           <FaUser />
         </button>
         <button className="signup-button">
           <FaSignInAlt />
-          Sign Up
+        <span className="signup-text">Sign up</span>
         </button>
         <HamburgerMenu />
       </div>
