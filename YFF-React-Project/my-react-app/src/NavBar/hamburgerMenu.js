@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
-import { IoMenu, IoClose } from "react-icons/io5";
-import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./navBar.css";
+import "./hamburgerMenu.css";
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +12,7 @@ function HamburgerMenu() {
         onClick={() => setIsOpen((open) => !open)}
         aria-label="Toggle menu"
       >
-        {isOpen ? <HiXMark size={42} /> : <HiBars3 size={42} />}
+        {isOpen ? <HiXMark size={40} /> : <HiBars3 size={40} />}
       </button>
         <div className="menu-items">
           <button className="login-button">
