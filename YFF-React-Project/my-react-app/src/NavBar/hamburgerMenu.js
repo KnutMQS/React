@@ -21,7 +21,6 @@ function HamburgerMenu() {
           <button className="signup-button">
             Sign Up
           </button>
-          <div className="navbar-center">
             <ul className="nav-links">
               <li>
                 <a href="#">Placeholder</a>
@@ -35,7 +34,6 @@ function HamburgerMenu() {
             </ul>
           </div>
         </div>
-    </div>
   );
 }
 export default HamburgerMenu;

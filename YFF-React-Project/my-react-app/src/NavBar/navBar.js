@@ -11,7 +11,7 @@ const NavBar = () => {
           <img src={logo} alt="Logo" className="logo-image" />
         </a>
       </div>
-        <div className="navbar-center">
+      <div className="navbar-center">
         <div className="search-container">
           <input type="text" className="search-input" placeholder="Search..." />
           <button className="search-button">
@@ -19,15 +19,26 @@ const NavBar = () => {
             <span className="button-text">Search</span>
           </button>
         </div>
-        </div>
-        <div className="navbar-right">
+        <ul className="nav-links">
+          <li>
+            <a href="#">Placeholder</a>
+          </li>
+          <li>
+            <a href="#">Placeholder</a>
+          </li>
+          <li>
+            <a href="#">Placeholder</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-right">
         <button className="login-button">
           <span className="login-text">Login</span>
           <FaUser />
         </button>
         <button className="signup-button">
           <FaSignInAlt />
-        <span className="signup-text">Sign up</span>
+          <span className="signup-text">Sign up</span>
         </button>
         <HamburgerMenu />
       </div>
